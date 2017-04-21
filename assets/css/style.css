@@ -18,28 +18,29 @@
 }
 
 #header{
-	background-color: limegreen;
+	background-color: #a3a2a0;
 	text-align: center;
-	border-color: limegreen;
+	border-color: #a3a2a0;
 	border-style: solid;
 	border-width: 2px;
 	padding-left: 32%
 }
 
 #button {
-	margin-left: 35%;
-	width: 300px;
+	margin-left: 36%;
+	width: 310px;
 	height: 200px;
 	font-size: 150px;
+	background-color: #a3a2a0;
 }
 
 footer {
 	width: 100%;
-	color: limegreen;
-	background-color: black;
+	color: white;
+	background-color: darkred;
 	padding-top: 15px;
 	height: 55px;
-	border-top-color: limegreen;
+	border-top-color: #a3a2a0;
 	border-top-width: 5px;
 	text-align: center;
 	border-top-style: solid;
