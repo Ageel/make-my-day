@@ -7,23 +7,30 @@
 	text-align: center;
 }*/
 
-#main {
+#main-content {
 	background-color: #a3a2a0;
 	background-repeat: no-repeat;
 	height: 500px;
 }
 
 #brand {
-	background-color: #36465d;
+	background-color: transparent;
 }
 
 #header{
-	background-color: #36465d;
+	background-color: limegreen;
 	text-align: center;
-	border-color: #36465d;
+	border-color: limegreen;
 	border-style: solid;
 	border-width: 2px;
 	padding-left: 32%
+}
+
+#button {
+	margin-left: 35%;
+	width: 300px;
+	height: 200px;
+	font-size: 150px;
 }
 
 footer {
