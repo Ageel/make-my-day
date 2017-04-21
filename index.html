@@ -21,7 +21,7 @@
 
 </head>
 
-<body style="font-family: 'Righteous', 'cursive'; background-color: black;">
+<body style="font-family: 'Righteous', 'cursive'; background-color: #36465d">
 
 
 <!-- This is the header section -->
@@ -41,47 +41,49 @@
 
  <!-- This is the main banner -->
 
-        <div id="main-content" class="jumbotron">
+        <div id="main-content" class="jumbotron" style="color: #efeaee">
 
             <div class="row">
 
                 <div>
                     
-                        <div class="col-md-6" style="border-right-color: black; border-right-style: solid; border-right-width: 3px; height: 400px">
+                        <div class="col-md-6">
 
                             <p style="margin-left: 150px;">City/Zip: </p>
-                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px;">
+                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px; background-color: black">
 
                             <p style="margin-left: 150px;">Date: </p>
-                            <div class="container" style="margin-left: 130px; ">
-   <div class="row">
-       <div class='col-sm-6'>
-           <div class="form-group">
-               <div class='input-group date' id='datetimepicker1'>
-                   <input type='text' class="form-control" />
-                   <span class="input-group-addon">
-                       <span class="glyphicon glyphicon-calendar"></span>
-                   </span>
-               </div>
-           </div>
-       </div>
-       <script type="text/javascript">
-           $(function () {
-               $('#datetimepicker1').datetimepicker();
-           });
-       </script>
-   </div>
-</div>
+                            <!-- This should be the dropdown -->
+                            <div class="container" style="margin-left: 130px;">
+
+                            <div class="row">
+                                <div class='col-sm-6'>
+                                    <div class="form-group">
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' class="form-control" />
+                                            <span class="input-group-addon" style="background-color: black">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $('#datetimepicker1').datetimepicker();
+                                        });
+                                    </script>
+                                </div>
+                            </div>
 
                         </div>
 
                         <div class="col-md-6" style="border-right-color: black; border-right-style: solid; border-right-width: 3px; height: 400px">
 
-                            <p style="margin-left: 150px;">City/Zip: </p>
-                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px;">
+                            <p style="margin-left: 150px;"></p>
+                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px; background-color: black; margin-top: 25px; height: 35px" value="What you wanna eat?">
 
-                            <p style="margin-left: 150px;">Date: </p>
-                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; width: 250px;">
+                            <p style="margin-left: 150px;"></p>
+                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; width: 250px; background-color: black; margin-top: 27px; height: 35px" value="What you wanna do?">
 
                         </div>
 
@@ -98,7 +100,7 @@
 
 
 
-<div style="height: 730px;"></div>
+<div style="height: 630px;"></div>
 
 
 <!-- This is the footer -->
