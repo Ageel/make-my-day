@@ -26,7 +26,7 @@
 
 <!-- This is the header section -->
 
-<header id="header" class="navbar navbar-default" style="background-color: #36465d;">
+<header id="header" class="navbar navbar-default">
 <!-- <div class="container-fluid"> -->
 
         <div id="brand" class="navbar-header">
@@ -45,9 +45,54 @@
 
             <div class="row">
 
+                <div>
+                    
+                        <div class="col-md-6" style="border-right-color: black; border-right-style: solid; border-right-width: 3px; height: 400px">
+
+                            <p style="margin-left: 150px;">City/Zip: </p>
+                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px;">
+
+                            <p style="margin-left: 150px;">Date: </p>
+                            <div class="container" style="margin-left: 130px; ">
+   <div class="row">
+       <div class='col-sm-6'>
+           <div class="form-group">
+               <div class='input-group date' id='datetimepicker1'>
+                   <input type='text' class="form-control" />
+                   <span class="input-group-addon">
+                       <span class="glyphicon glyphicon-calendar"></span>
+                   </span>
+               </div>
+           </div>
+       </div>
+       <script type="text/javascript">
+           $(function () {
+               $('#datetimepicker1').datetimepicker();
+           });
+       </script>
+   </div>
+</div>
+
+                        </div>
+
+                        <div class="col-md-6" style="border-right-color: black; border-right-style: solid; border-right-width: 3px; height: 400px">
+
+                            <p style="margin-left: 150px;">City/Zip: </p>
+                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px;">
+
+                            <p style="margin-left: 150px;">Date: </p>
+                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; width: 250px;">
+
+                        </div>
+
+                </div>
+
             </div>
 
         </div>
+
+
+        <button id="button" type="button" class="btn btn-success btn-lg">GO!</button>
 
 
 
