@@ -1,0 +1,20 @@
+@font-face {
+   font-family: sansation;
+   src: url(sansation_light.woff);
+}
+
+.jumbotron{
+	text-align: center;
+}
+.container {
+	background-image: url("../images/nightlife.jpg"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 500px;
+   font-family: sansation;
+}
+
+.header{
+	
+}
