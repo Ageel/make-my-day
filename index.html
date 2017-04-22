@@ -17,6 +17,9 @@
 
     <!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Link to datepicker -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -68,25 +71,31 @@
                         <div id="page2" class="col-md-6">
 
                             <p></p>
-                            <input type="text" name="gif" class="newgif" value="Choose your cuisine">
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                                    <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">HTML</a></li>
-                                            <li><a href="#">CSS</a></li>
-                                            <li><a href="#">JavaScript</a></li>
-                                        </ul>
-                            </div>
+                            <input type="text" name="gif" class="newgif" value="Search your cuisine">
 
                             <p style="margin-left: 150px;"></p>
-                            <input type="text" name="gif" class="newgif" value="Choose your event">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Choose your event
+                                    <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">None</a></li>
+                                            <li><a href="#">Nightlife</a></li>
+                                            <li><a href="#">Concerts</a></li>
+                                            <li><a href="#">Sports</a></li>
+                                            <li><a href="#">Family</a></li>
+                                            <li><a href="#">Festivals</a></li>
+                                            <li><a href="#">Comedy</a></li>
+                                            <li><a href="#">Performing Arts</a></li>
+                                        </ul>
+                            </div>
 
                         </div>
 
                 </div>
 
             </div>
+
+            <div id=“map”></div>
 
         </div>
 

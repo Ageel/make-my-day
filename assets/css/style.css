@@ -20,10 +20,24 @@
 	height: 35px;
 }
 
+/*This is the styling for page 2*/
 #page2{
 	display: none;
 }
 
+.dropdown {
+	margin-bottom: 100px;
+}
+
+.btn {
+	color: black;
+	background-color: white;
+	width: 350px;
+}
+
+.dropdown-menu {
+	width: 350px;
+}
 
 #page3{
 	display: none;
