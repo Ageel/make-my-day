@@ -4,7 +4,6 @@
 
 <head>
 
-
     <!-- Link to style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -18,13 +17,19 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/image15.png">
 
+     <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- Link to Javascript file -->
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
     <title>Make My Day</title>
 
 </head>
 
-
-<body style="font-family: 'Righteous', 'cursive'; background-color: black;">
-
+<body style="font-family: 'Righteous', 'cursive'; background-color: #36465d">
 
 
 <!-- This is the header section -->
@@ -32,47 +37,11 @@
 <header id="header" class="navbar navbar-default">
 <!-- <div class="container-fluid"> -->
 
-    <!-- First divs of page -->
-    <div id=“city”>
-
-    </div>
-
-    <div id=“food”>
-
-    </div>
-
-    <div id=“map”>
-
-    </div>
-
-    <!-- Second divs -->
-    <div id=“date”>
-
-    </div>
-
-    <div id=“event”>
-
-    </div>
-
-    <div id=“locations”>
-
-    </div>
-
-    <!-- Third divs -->
-    <div id=“itinerary”>
-
-    </div>
-s
-
         <div id="brand" class="navbar-header">
 
             <h1 style="color: #efeaee;">Make Your Day Awesome</h1>
 
 <!--</div>-->
-
-    <div class=“footer”>
-    
-
     </div>
 
 </header>
@@ -80,47 +49,36 @@ s
 
  <!-- This is the main banner -->
 
-        <div id="main-content" class="jumbotron">
+        <div id="main-content" class="jumbotron" style="color: #efeaee">
 
             <div class="row">
 
                 <div>
                     
-                        <div class="col-md-6" style="border-right-color: black; border-right-style: solid; border-right-width: 3px; height: 400px">
+                        <div class="col-md-6">
 
-                            <p style="margin-left: 150px;">City/Zip: </p>
-                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px;">
+                            <p style="margin-left: 170px;">City/Zip: </p>
+                            <input type="text" name="gif" class="newgif" style="margin-left: 170px; margin-bottom: 65px; width: 250px; background-color: black">
 
-                            <p style="margin-left: 150px;">Date: </p>
-                            <div class="container" style="margin-left: 130px; ">
-   <div class="row">
-       <div class='col-sm-6'>
-           <div class="form-group">
-               <div class='input-group date' id='datetimepicker1'>
-                   <input type='text' class="form-control" />
-                   <span class="input-group-addon">
-                       <span class="glyphicon glyphicon-calendar"></span>
-                   </span>
-               </div>
-           </div>
-       </div>
-       <script type="text/javascript">
-           $(function () {
-               $('#datetimepicker1').datetimepicker();
-           });
-       </script>
-   </div>
-</div>
+                            <p style="margin-left: 170px;">Date: </p>
+                            <!-- This should be the dropdown -->
+                            <div class="container" style="margin-left: 150px;">
+                             
+                           
+                           <p>  <input type="text" id="datepicker" style="background-color: black" ></p>
+                          
+                                </div>
+                            </div>
 
                         </div>
 
                         <div class="col-md-6" style="border-right-color: black; border-right-style: solid; border-right-width: 3px; height: 400px">
 
-                            <p style="margin-left: 150px;">City/Zip: </p>
-                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px;">
+                            <p style="margin-left: 150px;"></p>
+                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; margin-bottom: 65px; width: 250px; background-color: black; margin-top: 25px; height: 35px" value="What you wanna eat?">
 
-                            <p style="margin-left: 150px;">Date: </p>
-                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; width: 250px;">
+                            <p style="margin-left: 150px;"></p>
+                            <input type="text" name="gif" class="newgif" style="margin-left: 150px; width: 250px; background-color: black; margin-top: 27px; height: 35px" value="What you wanna do?">
 
                         </div>
 
@@ -134,21 +92,24 @@ s
         <button id="button" type="button" class="btn btn-success btn-lg">GO!</button>
 
 
+        <section>
+            
+            
+
+        </section>
 
 
 
-<div style="height: 730px;"></div>
+
+
+<div style="height: 130px;"></div>
 
 
 <!-- This is the footer -->
 
-<footer>&#169; Copyright 2017 <a href="https://travishughes13.github.io/Bootstrap-Portfolio/" target="_blank" style="color: limegreen"></a>House Lannister</footer>
+<footer>&#169; Copyright 2017 <a href="https://travishughes13.github.io/Bootstrap-Portfolio/" target="_blank" style="color: white"></a>House Lannister</footer>
 
-    <!-- Link to jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-    <!-- Link to Javascript file -->
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+   
 
 </body>
 
