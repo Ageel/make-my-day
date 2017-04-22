@@ -21,9 +21,10 @@ $("#button2").on('click', function(){
 	$("#button2").css('display', 'none');
 	console.log('Click, damn it')
 	$('#main-content').css('height', '550px')
-	$('#main-content').css('background-image', 'url("../images/nightlife.jpg")');
+	$('#main-content').css('background-image', 'url("../images/nightlife2.jpg")');
 });
 
 $( function() {
     $( "#datepicker" ).datepicker();
+    $('#ui-datepicker-div').css('background-color', 'white');
   } );
