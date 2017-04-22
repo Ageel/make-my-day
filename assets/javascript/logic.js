@@ -23,3 +23,7 @@ $("#button2").on('click', function(){
 	$('#main-content').css('height', '550px')
 	$('#main-content').css('background-image', 'url("../images/nightlife.jpg")');
 });
+
+$( function() {
+    $( "#datepicker" ).datepicker();
+  } );

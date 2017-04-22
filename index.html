@@ -16,7 +16,15 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 
     <!-- Link to jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+   <!-- Link to Javascript file -->
+   <script type="text/javascript" src="assets/javascript/logic.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    
+    <!-- Link to Javascript file -->
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
 
     <title>Make My Day</title>
 
@@ -55,26 +63,9 @@
                             <input type="text" name="gif" class="newgif" style="margin-bottom: 65px; width: 350px; background-color: transparent;">
 
                             <p>Date: </p>
-                            <!-- This should be the dropdown -->
-                            <div class="container" style="margin-left: -15px; width: 375px">
-
-                            <div class="row">
-                                <div class='col-sm-12'>
-                                    <div class="form-group">
-                                        <div class='input-group date' id='datetimepicker1'>
-                                            <input type='text' class="form-control" style="background-color: transparent;">
-                                            <span class="input-group-addon" style="background-color: white;">
-                                        <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                    <!-- <script type="text/javascript">
-                                        $(function () {
-                                            $('#datetimepicker1').datetimepicker();
-                                        });
-                                    </script> -->
-                                </div>
+                           
+                         
+                          <p>  <input type="text" id="datepicker" style="background-color: transparent; width: 350px;" ></p>
                             
                         </p>
                         </div>
@@ -83,10 +74,10 @@
                         <div id="page2" class="col-md-6">
 
                             <p></p>
-                            <input type="text" name="gif" class="newgif" style="margin-bottom: 65px; width: 350px; background-color: transparent; margin-top: 25px; height: 35px" value="What you wanna eat?">
+                            <input type="text" name="gif" class="newgif" style="margin-bottom: 65px; width: 350px; background-color: transparent; margin-top: 25px; height: 35px" value="Choose your cuisine">
 
                             <p style="margin-left: 150px;"></p>
-                            <input type="text" name="gif" class="newgif" style="width: 350px; background-color: transparent; margin-top: 27px; height: 35px" value="What you wanna do?">
+                            <input type="text" name="gif" class="newgif" style="width: 350px; background-color: transparent; margin-top: 27px; height: 35px" value="Choose your event">
 
                         </div>
 
@@ -99,6 +90,8 @@
 
         <button type="button" class="btn btn-success btn-lg" id="button1">GO!</button>
         <button type="button" class="btn btn-success btn-lg" id="button2">GO!</button>
+        <button type="button" class="btn btn-success btn-lg" id="button3">GO!</button>
+        <button type="button" class="btn btn-success btn-lg" id="button4">GO!</button>
 
 
         <section>
@@ -118,8 +111,6 @@
 
 <footer>&#169; Copyright 2017 <a href="https://travishughes13.github.io/Bootstrap-Portfolio/" target="_blank" style="color: white"></a>House Lannister</footer>
 
-    <!-- Link to Javascript file -->
-    <script type="text/javascript" src="assets/javascript/logic.js"></script>
 
 </body>
 
