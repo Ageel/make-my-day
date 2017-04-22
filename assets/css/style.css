@@ -8,13 +8,33 @@
 }*/
 
 #main-content {
+/*<<<<<<< HEAD
 	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 350px;
+=======*/
+	background-image: url('../images/nightlife4.png');
 	background-repeat: no-repeat;
 	height: 350px;
 }
 
+#page1{
+	display: block;
+}
+
+#page2{
+	display: none;
+}
+
+
+#page3{
+	display: none;
+/*>>>>>>> origin/travis-branch*/
+}
+
 #brand {
 	background-color: transparent;
+	margin-left: 32%;
 }
 
 #header{
@@ -23,15 +43,34 @@
 	border-color: #a3a2a0;
 	border-style: solid;
 	border-width: 2px;
-	padding-left: 32%
 }
 
-#button {
+<<<<<<< HEAD
+/*#button {
 	margin-left: 36%;
+=======*/
+#button1 {
+	display: block;
+	margin-left: 36%;
+	margin-top: 45px;
+/*>>>>>>> origin/travis-branch*/
 	width: 310px;
 	height: 200px;
 	font-size: 150px;
 	background-color: #a3a2a0;
+/*<<<<<<< HEAD
+=======*/
+}
+
+#button2 {
+	display: none;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+/*>>>>>>> origin/travis-branch*/
 }
 
 footer {
