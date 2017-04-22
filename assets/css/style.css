@@ -59,6 +59,26 @@
 	background-color: #a3a2a0;
 }
 
+#button3 {
+	display: none;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+}
+
+#button4 {
+	display: none;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+}
+
 footer {
 	width: 100%;
 	color: white;
