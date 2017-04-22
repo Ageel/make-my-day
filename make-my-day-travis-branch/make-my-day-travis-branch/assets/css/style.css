@@ -1,0 +1,75 @@
+/*@font-face {
+   font-family: sansation;
+   src: url(sansation_light.woff);
+}*/
+
+/*.jumbotron{
+	text-align: center;
+}*/
+
+#main-content {
+	background-image: url('../images/nightlife4.png');
+	background-repeat: no-repeat;
+	height: 350px;
+}
+
+#page1{
+	display: block;
+}
+
+#page2{
+	display: none;
+}
+
+
+#page3{
+	display: none;
+}
+
+#brand {
+	background-color: transparent;
+	margin-left: 32%;
+}
+
+#header{
+	background-color: #a3a2a0;
+	text-align: center;
+	border-color: #a3a2a0;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#button1 {
+	display: block;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+}
+
+#button2 {
+	display: none;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+}
+
+footer {
+	width: 100%;
+	color: white;
+	background-color: darkred;
+	padding-top: 15px;
+	height: 55px;
+	border-top-color: #a3a2a0;
+	border-top-width: 5px;
+	text-align: center;
+	border-top-style: solid;
+	bottom: 0px;
+	position: relative;
+	font-family: 'Righteous', cursive;
+}
