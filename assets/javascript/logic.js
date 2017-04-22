@@ -27,5 +27,5 @@ $("#button2").on('click', function(){
 
 $( function() {
     $( "#datepicker" ).datepicker();
->>>>>>> origin/travis-branch
+
   } );
