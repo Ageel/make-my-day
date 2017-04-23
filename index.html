@@ -17,6 +17,9 @@
 
     <!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Link to datepicker -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -52,22 +55,6 @@
 
                 <div>
                     <div class="col-md-4"></div>
-                    
-
-                        <!-- <div class="col-md-6">
-
-                            <p style="margin-left: 170px;">City/Zip: </p>
-                            <input type="text" name="gif" class="newgif" style="margin-left: 170px; margin-bottom: 65px; width: 250px; background-color: black">
-
-                            <p style="margin-left: 170px;">Date: </p>
-                            This should be the dropdown
-                            <div class="container" style="margin-left: 150px;">
-                             
-                           
-                           <p>  <input type="text" id="datepicker" style="background-color: black" ></p>
-                          
-                                </div>
-                            </div> -->
 
                         <div id="page1" class="col-md-6">
 
@@ -83,6 +70,8 @@
                         </div>
                 </div>
 
+
+                    <!-- Page2 -->
                         <div id="page2" class="col-md-6">
 
 
@@ -93,19 +82,74 @@
                             <input type="text" name="gif" class="newgif" style="margin-left: 150px; width: 250px; background-color: black; margin-top: 27px; height: 35px" value="What you wanna do?"> -->
 
                             <p></p>
-                            <input type="text" name="gif" class="newgif" value="Choose your cuisine">
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                                    <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">HTML</a></li>
-                                            <li><a href="#">CSS</a></li>
-                                            <li><a href="#">JavaScript</a></li>
+                            <input type="text" name="gif" class="newgif" value="Search your cuisine">
+
+                        </div>
+
+
+                    <!-- Page3 -->
+                        <div id="page3" class="col-md-12">
+
+                        <div id="restaurant" class="row">
+
+                        <div class="col-md-3"></div>
+
+                        <div class="col-md-6">
+
+                            <img id="rest-image"></img>
+                            <p>1. Tacos Tierra Caliente</p>
+                            <p id="distance"></p>
+                            <img id="star-rating"></img>
+                            <p id="review-count">578 reviews</p>
+                            <p>$</p>
+                            <p id="neighborhood">Montrose</p>
+                            <p id="address">2003 W Alabama St, Houston</p>
+                            <p id="category">Food trucks, Tacos</p>
+                            
+                        </div>
+
+                        </div>
+
+                        </div>
+
+
+                    <!-- Page4 -->
+                        <div id="page4" class="col-md-6">
+
+                        <p></p>
+
+                            <div class="input-group" style="max-width: 350px;">                                            
+                                <input type="textbox" id="event-type" class="form-control"></input>
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul id="event-list" class="dropdown-menu">
+                                            <li><a href="#">None</a></li>
+                                            <li><a href="#">Nightlife</a></li>
+                                            <li><a href="#">Concerts</a></li>
+                                            <li><a href="#">Sports</a></li>
+                                            <li><a href="#">Family</a></li>
+                                            <li><a href="#">Comedy</a></li>
+                                            <li><a href="#">Festivals</a></li>
+                                            <li><a href="#">Performing Arts</a></li>
                                         </ul>
+                                    </div>
                             </div>
 
-                            <p style="margin-left: 150px;"></p>
-                            <input type="text" name="gif" class="newgif" value="Choose your event">
+                        </div>
+
+                    <!-- Page5 -->
+                        <div id="page5" class="col-md-12">
+
+                            <div></div>
+
+                        </div>
+
+                    <!-- Page6 -->
+                        <div id="page6" class="col-md-12">
+
+                            <div id=“map”></div>
 
 
                         </div>
@@ -114,6 +158,8 @@
 
             </div>
 
+            <div id=“map”></div>
+
         </div>
 
 
@@ -121,6 +167,8 @@
         <button type="button" class="btn btn-success btn-lg" id="button2">GO!</button>
         <button type="button" class="btn btn-success btn-lg" id="button3">GO!</button>
         <button type="button" class="btn btn-success btn-lg" id="button4">GO!</button>
+        <button type="button" class="btn btn-success btn-lg" id="button5">GO!</button>
+        <button type="button" class="btn btn-success btn-lg" id="button6" style="font-size: 15px;">Plan another night</button>
 
 
         <section>
