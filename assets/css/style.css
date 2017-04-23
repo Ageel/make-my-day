@@ -25,6 +25,22 @@
 	display: none;
 }
 
+#page3{
+	display: none;
+}
+
+#page4{
+	display: none;
+}
+
+#page5{
+	display: none;
+}
+
+#page6{
+	display: none;
+}
+
 .dropdown {
 	margin-bottom: 100px;
 }
@@ -32,16 +48,13 @@
 .btn {
 	color: black;
 	background-color: white;
-	width: 350px;
+	width: 15px;
 }
 
 .dropdown-menu {
-	width: 350px;
+	width: 15px;
 }
 
-#page3{
-	display: none;
-}
 
 #brand {
 	background-color: transparent;
@@ -55,6 +68,8 @@
 	border-style: solid;
 	border-width: 2px;
 }
+
+/*This controls the buttons*/
 
 #button1 {
 	display: block;
@@ -96,12 +111,43 @@
 	background-color: #a3a2a0;
 }
 
+#button5 {
+	display: none;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+}
+
+#button6 {
+	display: none;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+}
+
+/*This controls the dropdown on page 4*/
+#event-type {
+	width: 335px;
+}
+
+#event-list {
+	margin-left: -335px;
+	width: 360px;
+}
+
 /*This is the calendar UI styling*/
 
 #ui-datepicker-div {
 	background-color: white;
-	width: 250px;
+	width: 288px;
 	padding: 15px;
+	margin-left: 35px;
 }
 
 .ui-datepicker-next {
@@ -109,15 +155,27 @@
 }
 
 .ui-datepicker-title {
-	margin-left: 77px; 
+	margin-left: 85px; 
 }
 
 .ui-datepicker-calendar {
 	margin-left: 15px;
 }
 
+.ui-datepicker-weekend {
+	padding-left-left: 5px;
+}
+
 span {
 	margin-right: 10px;
+	margin-left: 5px;
+}
+
+thead, tbody, td {
+	text-align: center;
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
 }
 
 /*This is the footer styling*/
