@@ -3,6 +3,7 @@
 	background-image: url('../images/nightlife4.png');
 	background-repeat: no-repeat;
 	height: 350px;
+	color: #efeaee;
 }
 
 body {
@@ -24,7 +25,14 @@ body {
 	height: 35px;
 }
 
-/*This is the styling for page 2*/
+/*This is the beginning styling for the other pages*/
+#goBack {
+	display: none;
+	margin-top: 25px;
+	margin-left: -190px;
+	margin-right: 4%;
+}
+
 #page2{
 	display: none;
 }
@@ -45,6 +53,8 @@ body {
 	display: none;
 }
 
+
+/*This controls the look of the dropdown menus*/
 .dropdown {
 	margin-bottom: 100px;
 }
@@ -60,9 +70,10 @@ body {
 }
 
 
+/*This is for the header*/
 #brand {
 	background-color: transparent;
-	margin-left: 32%;
+	margin-left: 22%;
 }
 
 #header{
@@ -73,8 +84,8 @@ body {
 	border-width: 2px;
 }
 
-/*This controls the buttons*/
 
+/*This controls the buttons*/
 #button1 {
 	display: block;
 	margin-left: 36%;
@@ -118,16 +129,11 @@ body {
 #button5 {
 	display: none;
 	margin-left: 36%;
-	margin-top: 45px;
+	margin-top: 355px;
 	width: 310px;
 	height: 200px;
 	font-size: 150px;
 	background-color: #a3a2a0;
-}
-
-/*This controls the dropdown on page 4*/
-#event-type {
-	width: 335px;
 }
 
 #event-list {
@@ -172,8 +178,7 @@ thead, tbody, td {
 }
 
 
-/*This controls the layout of the restaurants choices*/
-
+/*Page3 settings*/
 #restaurant {
 	background-color: white;
 	color: black;
@@ -243,6 +248,55 @@ thead, tbody, td {
 	height: 10px;
 }
 
+/*Page4 settings*/
+#event-type {
+	width: 335px;
+}
+
+
+/*Page5 settings*/
+#events {
+	background-color: white;
+	color: black;
+}
+
+#event-image {
+	float: left;
+	height: 150px;
+	width: 150px;
+
+}
+
+
+/*Page6 settings*/
+#map, #sampleMap {
+	margin-top: -50px;
+	width: 100%;
+	height: 450px;
+}
+
+#locations {
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	color: #36465d;
+	background-color: #a3a2a0;
+}
+
+#itinerary {
+	background-color: white;
+	width: 100%;
+	height: 160px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	font-size: 25px;
+}
+
+#activities {
+	margin-bottom: 15px;
+	margin-left: 22%;
+}
 
 /*This is the footer styling*/
 footer {
@@ -256,6 +310,6 @@ footer {
 	text-align: center;
 	border-top-style: solid;
 	bottom: 0px;
-	position: absolute;
+	position: relative;
 	font-family: 'Righteous', cursive;
 }
