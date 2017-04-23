@@ -8,6 +8,11 @@
 	background-image: url('../images/nightlife4.png');
 	background-repeat: no-repeat;
 	height: 350px;
+	color: #efeaee;
+}
+
+body {
+	height: 830px;
 }
 
 /*This controls the styling for the first page*/
@@ -25,7 +30,14 @@
 	height: 35px;
 }
 
-/*This is the styling for page 2*/
+/*This is the beginning styling for the other pages*/
+#goBack {
+	display: none;
+	margin-top: 25px;
+	margin-left: -190px;
+	margin-right: 4%;
+}
+
 #page2{
 	display: none;
 }
@@ -47,6 +59,8 @@
 	display: none;
 }
 
+
+/*This controls the look of the dropdown menus*/
 .dropdown {
 	margin-bottom: 100px;
 }
@@ -62,9 +76,10 @@
 }
 
 
+/*This is for the header*/
 #brand {
 	background-color: transparent;
-	margin-left: 32%;
+	margin-left: 22%;
 }
 
 #header{
@@ -75,9 +90,7 @@
 	border-width: 2px;
 }
 
-
 /*This controls the buttons*/
-
 
 #button1 {
 	display: block;
@@ -126,26 +139,11 @@
 #button5 {
 	display: none;
 	margin-left: 36%;
-	margin-top: 45px;
+	margin-top: 355px;
 	width: 310px;
 	height: 200px;
 	font-size: 150px;
 	background-color: #a3a2a0;
-}
-
-#button6 {
-	display: none;
-	margin-left: 36%;
-	margin-top: 45px;
-	width: 310px;
-	height: 200px;
-	font-size: 150px;
-	background-color: #a3a2a0;
-}
-
-/*This controls the dropdown on page 4*/
-#event-type {
-	width: 335px;
 }
 
 #event-list {
@@ -156,7 +154,6 @@
 /*This is the calendar UI styling*/
 
 #ui-datepicker-div {
-	background-color: white;
 	width: 288px;
 	padding: 15px;
 	margin-left: 35px;
@@ -188,6 +185,127 @@ thead, tbody, td {
 	border-color: black;
 	border-width: 1px;
 	border-style: solid;
+}
+
+
+/*Page3 settings*/
+#restaurant {
+	background-color: white;
+	color: black;
+}
+
+#rest-image {
+	float: left;
+	height: 150px;
+	width: 150px;
+
+}
+
+#name {
+	float: left;
+	margin-left: 10px;
+	font-size: 15px;
+	margin-right: 60%;
+
+}
+
+#distance {
+	float: right;
+	font-size: 15px;
+
+}
+
+#star-rating {
+	float: left;
+	height: 15px;
+	width: 150px;
+	margin-left: 10px;
+}
+
+#review-count {
+	float: left;
+	margin-left: 10px;
+	font-size: 15px;
+	margin-right: 30%;
+}
+
+#cost {
+	float: right;
+	font-size: 15px;
+}
+
+#neighborhood {
+	float: left;
+	font-size: 15px;
+	margin-left: 10px;
+	margin-right: 45%;
+	height: 10px;
+}
+
+#address {
+	float: left;
+	font-size: 15px;
+	margin-left: 10px;
+	margin-right: 45%;
+	height: 10px;
+}
+
+#category {
+	float: left;
+	font-size: 15px;
+	margin-left: 10px;
+	margin-right: 45%;
+	height: 10px;
+}
+
+/*Page4 settings*/
+#event-type {
+	width: 335px;
+}
+
+
+/*Page5 settings*/
+#events {
+	background-color: white;
+	color: black;
+}
+
+#event-image {
+	float: left;
+	height: 150px;
+	width: 150px;
+
+}
+
+
+/*Page6 settings*/
+#map, #sampleMap {
+	margin-top: -50px;
+	width: 100%;
+	height: 450px;
+}
+
+#locations {
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	color: #36465d;
+	background-color: #a3a2a0;
+}
+
+#itinerary {
+	background-color: white;
+	width: 100%;
+	height: 160px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	font-size: 25px;
+}
+
+#activities {
+	margin-bottom: 15px;
+	margin-left: 22%;
 }
 
 /*This is the footer styling*/

@@ -35,13 +35,18 @@
 <!-- This is the header section -->
 
 <header id="header" class="navbar navbar-default">
-<!-- <div class="container-fluid"> -->
 
-        <div id="brand" class="navbar-header">
+        <div id="brand" class="navbar-header col-md-12">
 
-            <h1 style="color: #efeaee;">Make Your Day Awesome</h1>
+            <div class="row">
 
-<!--</div>-->
+            <a id="goBack" class="col-md-4">Back</a>
+
+            <h1  class="col-md-6" style="color: #efeaee;">Make Your Day Awesome</h1>
+
+            </div>
+
+
     </div>
 
 </header>
@@ -49,7 +54,7 @@
 
  <!-- This is the main banner -->
 
-        <div id="main-content" class="jumbotron" style="color: #efeaee">
+        <div id="main-content" class="jumbotron">
 
             <div class="row">
 
@@ -88,25 +93,59 @@
 
 
                     <!-- Page3 -->
-                        <div id="page3" class="col-md-12">
+                        <div id="page3" class="col-md-12" style="margin-top: -50px">
 
-                        <div id="restaurant" class="row">
+                        <div class="row">
 
-                        <div class="col-md-3"></div>
+                        <button id="restaurant" class="col-md-12">
 
-                        <div class="col-md-6">
-
-                            <img id="rest-image"></img>
-                            <p>1. Tacos Tierra Caliente</p>
-                            <p id="distance"></p>
-                            <img id="star-rating"></img>
+                            <img id="rest-image" src="assets/images/tacos.jpg"></img>
+                            <p id="name">1. Tacos Tierra Caliente</p>
+                            <p id="distance">3.4 miles</p>
+                            <img id="star-rating" src="assets/images/stars.png"></img>
                             <p id="review-count">578 reviews</p>
-                            <p>$</p>
+                            <p id="cost">$</p>
                             <p id="neighborhood">Montrose</p>
                             <p id="address">2003 W Alabama St, Houston</p>
                             <p id="category">Food trucks, Tacos</p>
                             
+                        </button>
+
                         </div>
+
+                        <div class="row">
+
+                        <button id="restaurant" class="col-md-12">
+
+                            <img id="rest-image" src="assets/images/tacos.jpg"></img>
+                            <p id="name">1. Tacos Tierra Caliente</p>
+                            <p id="distance">3.4 miles</p>
+                            <img id="star-rating" src="assets/images/stars.png"></img>
+                            <p id="review-count">578 reviews</p>
+                            <p id="cost">$</p>
+                            <p id="neighborhood">Montrose</p>
+                            <p id="address">2003 W Alabama St, Houston</p>
+                            <p id="category">Food trucks, Tacos</p>
+                            
+                        </button>
+
+                        </div>
+
+                        <div class="row">
+
+                        <button id="restaurant" class="col-md-12">
+
+                            <img id="rest-image" src="assets/images/tacos.jpg"></img>
+                            <p id="name">1. Tacos Tierra Caliente</p>
+                            <p id="distance">3.4 miles</p>
+                            <img id="star-rating" src="assets/images/stars.png"></img>
+                            <p id="review-count">578 reviews</p>
+                            <p id="cost">$</p>
+                            <p id="neighborhood">Montrose</p>
+                            <p id="address">2003 W Alabama St, Houston</p>
+                            <p id="category">Food trucks, Tacos</p>
+                            
+                        </button>
 
                         </div>
 
@@ -142,14 +181,65 @@
                     <!-- Page5 -->
                         <div id="page5" class="col-md-12">
 
-                            <div></div>
+                            <div class="row">
+
+                                <button id="events" class="col-md-12">
+
+                                    <img id="event-image" src="assets/images/tom.jpeg"></img>
+                                    <p id="name">Tom Petty and The Heartbreakers</p>
+                                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                                    <a id="link" href="#" target="_blank">Find tickets</a>
+                                    <p id="date1">Apr 29</p>
+                                    <p id="time">7:30 PM</p>
+                                    <p id="address">The Cynthia Woods Mitchell Pavillon</p>
+                                    <p id="category">Rock</p>
+                            
+                                </button>
+
+                            </div>
 
                         </div>
 
                     <!-- Page6 -->
                         <div id="page6" class="col-md-12">
 
-                            <div id=“map”></div>
+                            <div id=“map”>
+                                
+                                <img id="sampleMap" src="assets/images/sampleMap.JPG">
+
+                            </div>
+
+                            <div class="container">
+
+                                <div class="row">
+                                
+                                    <div id="locations" class="col-md-12">Location 1</div>
+                                    <div id="locations" class="col-md-12">Location 2</div>
+                                    <div id="locations" class="col-md-12">Location 3</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="container">
+
+                                <div class="row">
+                                    
+                                    <div id="itinerary">
+
+                                        <div id="activities" style="color: black">Itinerary: 
+
+                                            <div>1. Arrive Tacos Tierra Caliente, 5:30PM</div>
+                                            <div>2. Depart Tacos Tierra Caliente, 7:00PM</div>
+                                            <div>3. Arrive Tom Petty and the Heartbreaker, 7:20PM</div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                
+                            </div>
 
 
                         </div>
@@ -158,8 +248,6 @@
 
             </div>
 
-            <div id=“map”></div>
-
         </div>
 
 
@@ -167,8 +255,7 @@
         <button type="button" class="btn btn-success btn-lg" id="button2">GO!</button>
         <button type="button" class="btn btn-success btn-lg" id="button3">GO!</button>
         <button type="button" class="btn btn-success btn-lg" id="button4">GO!</button>
-        <button type="button" class="btn btn-success btn-lg" id="button5">GO!</button>
-        <button type="button" class="btn btn-success btn-lg" id="button6" style="font-size: 15px;">Plan another night</button>
+        <button type="button" class="btn btn-success btn-lg" id="button5" style="font-size: 15px;">Plan another night</button>
 
 
         <section>
@@ -180,12 +267,9 @@
 
 
 
-<!-- 
-<<<<<<< HEAD
-<div style="height: 130px;"></div>
-======= -->
-<div style="height: 430px;"></div>
-<!-- >>>>>>> origin/travis-branch -->
+
+<div style="height: 1300px;"></div>
+
 
 
 <!-- This is the footer -->
