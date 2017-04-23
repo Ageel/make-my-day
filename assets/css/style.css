@@ -1,12 +1,4 @@
-/*@font-face {
-   font-family: sansation;
-   src: url(sansation_light.woff);
-}*/
-
-/*.jumbotron{
-	text-align: center;
-}*/
-
+/*This is the styling for the basic pages*/
 #main-content {
 /*<<<<<<< HEAD
 	background-color: transparent;
@@ -18,8 +10,19 @@
 	height: 350px;
 }
 
+/*This controls the styling for the first page*/
 #page1{
 	display: block;
+}
+
+.newgif {
+	height: 40px;
+	font-size: 30px;
+	margin-bottom: 65px; 
+	width: 350px; 
+	background-color: transparent; 
+	margin-top: 25px; 
+	height: 35px;
 }
 
 #page2{
@@ -73,6 +76,51 @@
 /*>>>>>>> origin/travis-branch*/
 }
 
+#button3 {
+	display: none;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+}
+
+#button4 {
+	display: none;
+	margin-left: 36%;
+	margin-top: 45px;
+	width: 310px;
+	height: 200px;
+	font-size: 150px;
+	background-color: #a3a2a0;
+}
+
+/*This is the calendar UI styling*/
+
+#ui-datepicker-div {
+	background-color: white;
+	width: 250px;
+	padding: 15px;
+}
+
+.ui-datepicker-next {
+	float: right;
+}
+
+.ui-datepicker-title {
+	margin-left: 77px; 
+}
+
+.ui-datepicker-calendar {
+	margin-left: 15px;
+}
+
+span {
+	margin-right: 10px;
+}
+
+/*This is the footer styling*/
 footer {
 	width: 100%;
 	color: white;
