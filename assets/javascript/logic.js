@@ -66,8 +66,8 @@ $("#button5").on('click', function(){
 
 
 // This clears the textbox on page 3
-$('.cuisine').on('click', function(){
-	$('.cuisine').val('');
+$('.newgif').on('click', function(){
+	$('.newgif').val('');
 })
 
 // This is the datepicker function
