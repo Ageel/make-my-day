@@ -1,10 +1,5 @@
 /*This is the styling for the basic pages*/
 #main-content {
-/*<<<<<<< HEAD
-	background-color: transparent;
-	background-repeat: no-repeat;
-	height: 350px;
-=======*/
 	background-image: url('../images/nightlife4.png');
 	background-repeat: no-repeat;
 	height: 350px;
@@ -44,7 +39,6 @@ body {
 
 #page3{
 	display: none;
-/*>>>>>>> origin/travis-branch*/
 }
 
 #page4{
@@ -90,22 +84,19 @@ body {
 	border-width: 2px;
 }
 
-/*This controls the buttons*/
 
+/*This controls the buttons*/
 #button1 {
 	display: block;
 	margin-left: 36%;
 	margin-top: 45px;
-/*>>>>>>> origin/travis-branch*/
 	width: 310px;
 	height: 200px;
 	font-size: 150px;
 	background-color: #a3a2a0;
-/*<<<<<<< HEAD
-=======*/
 }
 
-#button2, #button3, #button4 {
+#button2 {
 	display: none;
 	margin-left: 36%;
 	margin-top: 45px;
@@ -113,7 +104,6 @@ body {
 	height: 200px;
 	font-size: 150px;
 	background-color: #a3a2a0;
-/*>>>>>>> origin/travis-branch*/
 }
 
 #button3 {

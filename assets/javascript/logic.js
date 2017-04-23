@@ -1,4 +1,3 @@
-
 // These are the starting variables
 var eventful = "NpDT6Lg3gwd859Cr.";
 
@@ -84,4 +83,3 @@ $( function() {
 $(document).on('click', '.dropdown-menu li a', function() {
     $('#event-type').val($(this).html());
 });
->>>>>>> origin/travis-branch
