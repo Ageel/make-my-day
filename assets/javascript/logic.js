@@ -129,5 +129,3 @@ $(document).on('click', '.dropdown-menu li a', function() {
 $(document).on('click', '.dropdown-menu li a', function() {
     $('#food-type').val($(this).html('Choose your cuisine'));
 });
-
-var searchTerm = $('.newgif').val().trim();
