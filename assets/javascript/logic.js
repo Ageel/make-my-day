@@ -1,9 +1,34 @@
-// These are the starting variables
-var eventful = "NpDT6Lg3gwd859Cr.";
+var eventful = "NpDT6Lg3gwd859Cr";
 
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAKvc4KYlF38kGUwoiaBdMT4Ofy0Qd3Hb4",
+    authDomain: "make-my-day-a494b.firebaseapp.com",
+    databaseURL: "https://make-my-day-a494b.firebaseio.com",
+    projectId: "make-my-day-a494b",
+    storageBucket: "make-my-day-a494b.appspot.com",
+    messagingSenderId: "1064955567723"
+  };
+  firebase.initializeApp(config);
+  console.log(firebase);
+
+//	Get a reference to the databse service 
+  var database = firebase.database();
+
+
+  
 
 // These are the button events that move the page
 $("#button1").on('click', function(){
+
+	//define variables
+	var area; 
+    var date; 
+
+         // Capture User Inputs and store them into variables
+      var area = $(".newgif").val().trim();
+      var date = $("#datepicker").val().trim();
+
 	event.preventDefault();
 	$("#page1").css('display', 'none');
 	$("#page2").css('display', 'block');
@@ -11,7 +36,23 @@ $("#button1").on('click', function(){
 	$('#brand').css('margin-left', '0%');
 	$("#button1").css('display', 'none');
 	$("#button2").css('display', 'block');
-});
+
+	 
+
+
+  //change what is save in firebase
+
+    database.ref().set({
+    	area: area,
+    	date: date,
+      });
+
+      // Console log each of the user inputs to confirm we are receiving them
+      console.log(area);
+      console.log(date);
+      
+    
+    });
 
 $("#button2").on('click', function(){
 	event.preventDefault();
@@ -83,3 +124,10 @@ $( function() {
 $(document).on('click', '.dropdown-menu li a', function() {
     $('#event-type').val($(this).html());
 });
+
+$(document).on('click', '.dropdown-menu li a', function() {
+    $('#food-type').val($(this).html('Choose your cuisine'));
+});
+
+var searchTerm = $('.newgif').val().trim();
+
