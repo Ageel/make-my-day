@@ -1,3 +1,4 @@
+// These are the starting variables
 var eventful = "NpDT6Lg3gwd859Cr";
 
 // Initialize Firebase
@@ -130,4 +131,3 @@ $(document).on('click', '.dropdown-menu li a', function() {
 });
 
 var searchTerm = $('.newgif').val().trim();
-
