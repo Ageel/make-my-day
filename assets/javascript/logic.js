@@ -1,5 +1,5 @@
 // These are the starting variables
-var eventful = "NpDT6Lg3gwd859Cr.";
+var eventful = "NpDT6Lg3gwd859Cr";
 
 
 // These are the button events that move the page
@@ -82,4 +82,8 @@ $( function() {
 // This allows the dropdown selection to be added to the input field
 $(document).on('click', '.dropdown-menu li a', function() {
     $('#event-type').val($(this).html());
+});
+
+$(document).on('click', '.dropdown-menu li a', function() {
+    $('#food-type').val($(this).html('Choose your cuisine'));
 });
