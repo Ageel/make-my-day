@@ -16,7 +16,7 @@ var eventful = "NpDT6Lg3gwd859Cr";
 //	Get a reference to the databse service 
   var database = firebase.database();
 
-
+console.log(database);
   
 
 // These are the button events that move the page
@@ -131,3 +131,40 @@ $(document).on('click', '.dropdown-menu li a', function() {
 });
 
 var searchTerm = $('.newgif').val().trim();
+
+// Ajax calls to Heroku
+
+
+// var zip =$("#zip").val().trim();
+// var cuisine =$("#cuisine").val().trim();
+// var radius = parseInt($("#radius").val()) ;
+// var queryURL ="https://still-oasis-47024.herokuapp.com/api" + zip + "/"  + cuisine + "/" + radius;
+//     $.ajax({
+//       url: queryURL,
+//       method: "GET"
+//     }).done(function(response) {
+//       console.log(response);
+//       console.log(zip);
+//     console.log(cuisine);
+//     console.log(radius);
+    
+//     });
+// m/1,609.344=mi
+    $("#button2").on("click", function(){
+		var zip =$("#zip").val().trim();
+		var cuisine =$("#cuisine").val().trim();
+		var radius = parseInt(($("#radius").val())*1609.344);
+		var queryURL ="https://still-oasis-47024.herokuapp.com/api" + zip + "/"  + cuisine + "/" + radius;
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).done(function(response) {
+      console.log(response);
+      console.log(zip);
+    console.log(cuisine);
+    console.log(radius);
+      // console.log(response.Runtime);
+    });
+});
+
+    // ($("#radius").val())

@@ -22,9 +22,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Link to google maps -->
-    <script async defer src=“https://maps.googleapis.com/maps/api/js?key=AIzaSyBrD7CBO6Z8jzEZSriEGsnudMA2A6-lIvE&callback=initMap“>
-    </script>
+    <!-- <script async defer src=“https://maps.googleapis.com/maps/api/js?key=AIzaSyBrD7CBO6Z8jzEZSriEGsnudMA2A6-lIvE&callback=initMap“>
+    </script> -->
 
+    <!-- Firebase JavaScript Link -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 
     <!-- Link to datepicker -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -69,12 +71,45 @@
                         <div id="page1" class="col-md-6">
 
                             <p>Zip Code: </p>
-                            <input type="text" name="gif" class="newgif">
+                            <input type="text" name="gif" class="newgif" id="zip">
+
+                            
+                            <p>Driving Distance: How many miles to your food location?</p>
+                            <!-- <input type="text" name="gif" class="newgif" id="radius"> -->
+                           <!--  <div class="dropdown">
+                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="radius">Dropdown Example
+                              <span class="caret"></span></button>
+                              <ul class="dropdown-menu">
+                                <li>5</li>
+                                <li>10</li>
+                                <li>15</li>
+                                <li>20</li>
+                                <li>25</li>
+                              </ul>
+                            </div>
+ -->
+                            <div class="input-group" style="max-width: 350px">                                            
+                                <input type="textbox" id="event-type" class="form-control" id="radius"></input>
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul id="event-list" class="dropdown-menu">
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">10</a></li>
+                                            <li><a href="#">15</a></li>
+                                            <li><a href="#">20</a></li>
+                                            <li><a href="#">25</a></li>
+                                            
+                                        </ul>
+                                    </div>
+
+                            </div>
+
 
                             <p>Date: </p>
-                           
-                         
-                          <p>  <input type="text" id="datepicker" style="background-color: transparent; width: 350px;"></p>
+
+                            <p><input type="text" id="datepicker" style="background-color: transparent; width: 350px;"></p>
                             
                         </div>
                 </div>
@@ -84,8 +119,8 @@
                         <div id="page2" class="col-md-6">
 
                             <p>Search your cuisine</p>
-                            <input type="text" name="gif" class="newgif" value="Search your cuisine">
-
+                            <input type="text" name="gif" class="newgif"  id="cuisine">
+                            <!-- value="Search your cuisine" -->
                         </div>
 
 
