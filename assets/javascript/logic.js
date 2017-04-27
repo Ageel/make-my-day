@@ -151,7 +151,7 @@ var searchTerm = $('.newgif').val().trim();
 //     });
 // m/1,609.344=mi
     $("#button2").on("click", function(){
-		var zip =$("#zip").val().trim();
+		var zip =$("#zip").text().trim();
 		var cuisine =$("#cuisine").val().trim();
 		var radius = parseInt(($("#radius").val())*1609.344);
 		var queryURL ="https://still-oasis-47024.herokuapp.com/api" + zip + "/"  + cuisine + "/" + radius;
