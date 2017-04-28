@@ -11,15 +11,11 @@ var eventful = "NpDT6Lg3gwd859Cr";
     messagingSenderId: "1064955567723"
   };
   firebase.initializeApp(config);
-  console.log(firebase);
 
 //	Get a reference to the databse service 
   var database = firebase.database();
 
-
-  
-
-// These are the button events that move the page
+// This button displays page 2
 $("#button1").on('click', function(){
 	event.preventDefault();
 	$("#page1").css('display', 'none');
@@ -30,8 +26,7 @@ $("#button1").on('click', function(){
 	$("#button2").css('display', 'block');
     });
 
-
-// Ageel - this is the button for the Yelp ajax call
+// This button displays page 3 and calls the Yelp API
 $("#button2").on("click", function(){
 	event.preventDefault();
 	$("#page2").css('display', 'none');
@@ -49,11 +44,6 @@ $("#button2").on("click", function(){
       			url: queryURL,
       			method: "GET"
     		}).done(function(response) {
-      			console.log(response);
-    			console.log(zip);
-    			console.log(cuisine);
-    			console.log(radius);
-    			console.log(response.businesses);
 
     			var results = response.businesses;
         			for (var i = 0; i < 5; i++) {
@@ -74,7 +64,7 @@ $("#button2").on("click", function(){
        				// These variables hold the different dividers
             		var eatMe = $("<div class='row'>");
        				var foodButton = $("<button class='restaurant' class='col-md-12'>")
-       				var restImage = $('<img id="rest-image">')
+       				var restImage = $('<img id="rest-image" onerror="this.src=assets/images/default.png">')
        					restImage.attr('src', bizPic);
        				var restClose = $('</img>');
        				var bizName = $('<p id="name">' + name + '<p/>');
@@ -107,16 +97,10 @@ $("#button2").on("click", function(){
        					eatMe.append(foodButton);
        					eatMe.append(eatClose);
             					$("#page3").append(eatMe);
-                    // console.log(response.Runtime);
     }});
 });
-
-
     			
-
-
-
-// Note that this function is for any of the #restaurant ids on page 3, there is no button on this page
+// This function is for any of the restaurants on page 3, and displays page 4
 $(document).on('click', '.restaurant', function(){
 	event.preventDefault();
     latChoice = $(this).find('#latt').text();
@@ -125,14 +109,7 @@ $(document).on('click', '.restaurant', function(){
     var thisPhone = $(this).find('#phone').text();
     var thisAddress = $(this).find('#address').text();
 
-    console.log(latChoice);
-    console.log(lngChoice);
-    console.log(thisName);
-    console.log(thisPhone);
-    console.log(thisAddress);
-    console.log(this);
-
-    $('#activities').html('<div>1. ' + thisName + '  -  ' + thisPhone + '</div>');
+    $('#activities').append('<div>1. ' + thisName + '  -  ' + thisPhone + '</div>');
     $('#location1').html('<div>' + thisName + ' - ' + thisAddress + '</div>');
 
 	$("#page3").css('display', 'none');
@@ -140,64 +117,120 @@ $(document).on('click', '.restaurant', function(){
 	$("#button3").css('display', 'block');
 });
 
+// This button displays page 5 and runs the Eventful API call
 $("#button3").on('click', function(){
 	event.preventDefault();
+
+	// This creates the API search
+      var area = $(".zip").val().trim();
+      var date = $("#datepicker").val().trim();
+      var funEvent = $('#event-type').val().trim();
+      function dateParser () {
+      		var timeArray = date.split('/');
+      		timeArray.push('00');
+      		var dateReturn;
+      		var dateReturn = timeArray[2] + timeArray[0] + timeArray[1] + timeArray[3];
+      		return dateReturn;
+      };
+      var date13 = dateParser();
+      console.log(date13);
+      var queryURL2 = "https://still-oasis-47024.herokuapp.com/api/eventful/" + area + "/" + funEvent + "/" + date13;
+    		$.ajax({
+      			url: queryURL2,
+      			method: "GET"
+    		}).done(function(response) {
+      			console.log(response);
+    			console.log(area);
+    			console.log(date);
+    			console.log(funEvent);
+
+    			var results2 = response.events.events;
+
+    				for (var i = 0; i < 5; i++) {
+
+    				// This sets up the results into variables
+    				var eventPic = results2[i].image.url;
+    				var name2 = results2[i].title;
+    				var date1 = results2[i].start_time;
+    				var address2 = results2[i].venue_address;
+    				var url1 = results2[i].url;
+    				var catEvent = funEvent;
+    				var eventLat1 = results2[i].latitude;
+    				var eventLng1 = results2[i].longitude;
+
+    				// These are the display variables 
+            		var thrillMe = $("<div class='row'>");
+       				var eventButton = $("<button class='events' class='col-md-12'>")
+       				var eventImage = $('<img id="rest-image">')
+       					eventImage.attr('src', eventPic);
+       				var eventImgClose = $('</img>');
+       				var eventName = $('<p id="name2">' + name2 + '<p/>');
+       				var dateDiv = $('<p id="date1">' + date1 + '</p>');
+       				var eventLocation = $('<p id="address">' + address2 + '</p>');
+       				var eventCat = $('<p id="category">' + catEvent + '</p>');
+       				var latEvent = $("<p id='latt2' style='display:none;'>" + eventLat1 + "</p>");
+       				var lngEvent = $("<p id='long2' style='display:none;'>" + eventLng1 + "</p>");
+       				var disURL = $("<p id='url2' style='display:none;'>" + url1 + "</p>");
+       				var eventButtonClose = $('</button>');
+       				var thrillClose = $('</div>');
+
+       				// This puts the event buttons together
+       				eventButton.append(eventImage);
+       				eventButton.append(eventImgClose);
+       				eventButton.append(eventName);
+       				eventButton.append(dateDiv);
+       				eventButton.append(eventLocation);
+       				eventButton.append(eventCat);
+       				eventButton.append(latEvent);
+       				eventButton.append(lngEvent);
+       				eventButton.append(disURL);
+       				eventButton.append(eventButtonClose);
+       				thrillMe.append(eventButton);
+       				thrillMe.append(thrillClose);
+       					$("#page5").append(thrillMe);
+
+    				}});
+
 	$("#page4").css('display', 'none');
 	$("#page5").css('display', 'block');
 	$("#button3").css('display', 'none');
 });
 
-$("#events").on('click', function(){
-
-	//define variables
-	var area; 
-    var date; 
-
-         // Capture User Inputs and store them into variables
-      var area = $(".zip").val().trim();
-      var date = $("#datepicker").val().trim();
-
+// This sets up the event buttons and displays the final page
+$(document).on('click', '.events', function(){
 	event.preventDefault();
+
+    eventLat = $(this).find('#latt2').text();
+    eventLng = $(this).find('#long2').text();
+    var conName = $(this).find('#name2').text();
+    var conTix = $(this).find('#url2').text();
+    var conAddress = $(this).find('#address2').text();
+
+    console.log(latChoice);
+    console.log(lngChoice);
+    console.log(thisName);
+    console.log(thisPhone);
+    console.log(thisAddress);
+    console.log(this);
+
+    $('#activities').append('<div>1. ' + conName + ' - buy tickets here: ' + conTix + '</div>');
+    $('#location2').html('<div>' + conName + ' - ' + conAddress + '</div>');
+
 	$("#page5").css('display', 'none');
 	$("#page6").css('display', 'block');
 	$("#button5").css('display', 'block');
 
-
-
-
   //change what is save in firebase
-
     database.ref().set({
     	area: area,
     	date: date,
       });
-
-      // Console log each of the user inputs to confirm we are receiving them
-      console.log(area);
-      console.log(date);
 });
 
+// This button resets the application
 $("#button5").on('click', function(){
-	event.preventDefault();
-	$("#page6").css('display', 'none');
-	$("#page1").css('display', 'block');
-	$('#goBack').css('display', 'none');
-	$('#brand').css('margin-left', '22%');
-	$("#button5").css('display', 'none');
-	$("#button1").css('display', 'block');
+	window.location.reload();
 });
-
-
-// This handles the goBack function
-
-// $('#goBack').on('click', function(){
-// 	$("#page1").css('display', 'block');
-// 	$("#page2").css('display', 'none');
-// 	$('#goBack').css('display', 'none');
-// 	$('#brand').css('margin-left', '22%');
-// 	$("#button1").css('display', 'block');
-// 	$("#button2").css('display', 'none');
-// });
 
 
 // This is the datepicker function
@@ -213,37 +246,3 @@ $( function() {
 $(document).on('click', '.dropdown-menu li a', function() {
     $('#event-type').val($(this).html());
 });
-
-
-
-// $(document).on("click", "#button3", function() {
-// document.getElementById('event-type').innerHTML = "";
-//       var animal = $(this).text();
-//       console.log(animal);
-//       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-//         animal + "&api_key=dc6zaTOxFJmzC&limit=12";
-//       $.ajax({
-//           url: queryURL,
-//           method: "GET"
-//         })
-//         .done(function(response) {
-//         	var results = response.data;
-//         	for (var i = 0; i < 12; i++) {
-//             	var gifDiv = $("<div class='item'>");
-//             	var rating = results[i].rating;
-//             	var p = $("<p>").text("Rating: " + rating);
-//             	var animalImage = $("<img>");
-//             		animalImage.attr("src", results[i].images.fixed_height_still.url);
-//             		animalImage.attr("data-still", results[i].images.fixed_height_still.url);
-//             		animalImage.attr("data-animate", results[i].images.fixed_height.url);
-//             		animalImage.attr("data-state", 'still');
-//             		animalImage.attr("id", 'gif');
-//             		gifDiv.attr("style", "float: left");
-//             		p.attr("id", "rating");
-//             		gifDiv.prepend(p);
-//             		gifDiv.prepend(animalImage);
-//             		$("#putithere").prepend(gifDiv);
-
-// };
-
-
