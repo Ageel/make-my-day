@@ -21,7 +21,17 @@ h1 {
 	display: block;
 }
 
-.newgif {
+.zip {
+	height: 40px;
+	font-size: 30px;
+	margin-bottom: 65px; 
+	width: 350px; 
+	background-color: transparent; 
+	margin-top: 25px; 
+	height: 35px;
+}
+
+.cuisine {
 	height: 40px;
 	font-size: 30px;
 	margin-bottom: 65px; 
@@ -185,9 +195,11 @@ thead, tbody, td {
 
 
 /*Page3 settings*/
-#restaurant {
+.restaurant {
 	background-color: white;
 	color: black;
+	height: 195px;
+	width: 100%;
 }
 
 #rest-image {
@@ -281,12 +293,37 @@ thead, tbody, td {
 	height: 450px;
 }
 
-#locations {
+#location1 {
 	border-style: solid;
 	border-width: 2px;
 	border-color: black;
+	padding-bottom: 5px;
 	color: #36465d;
 	background-color: white;
+	font-size: 15px;
+	height: 30px;
+}
+
+#location2 {
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	padding-bottom: 5px;
+	color: #36465d;
+	background-color: white;
+	font-size: 15px;
+	height: 30px;
+}
+
+#location3 {
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	padding-bottom: 5px;
+	color: #36465d;
+	background-color: white;
+	font-size: 15px;
+	height: 30px;
 }
 
 #itinerary {

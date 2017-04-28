@@ -25,13 +25,13 @@
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 
     <!-- Link to Google Maps API -->
-    <script async defer src=“https://maps.googleapis.com/maps/api/js?key=AIzaSyBrD7CBO6Z8jzEZSriEGsnudMA2A6-lIvE&callback=initMap“>
-    </script>
+    <!-- <script async defer src=“https://maps.googleapis.com/maps/api/js?key=AIzaSyBrD7CBO6Z8jzEZSriEGsnudMA2A6-lIvE&callback=initMap“>
+    </script> -->
 
     <!-- Link to datepicker -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <title>Make My Day</title>
+    <title>Get Going!</title>
 
 </head>
 
@@ -48,7 +48,7 @@
 
             <a id="goBack" class="col-md-4">Back</a>
 
-                <h1  class="col-md-6" style="color: white;">Make Your Day Awesome</h1>
+                <h1  class="col-md-6" style="color: white;">Do You Feel Lucky?</h1>
 
             </div>
 
@@ -71,7 +71,7 @@
                         <div id="page1" class="col-md-6">
 
                             <p>Zip Code: </p>
-                            <input type="text" name="gif" class="newgif">
+                            <input type="text" name="gif" id="zip" class="zip">
 
                             <p>Date: </p>
                            
@@ -86,67 +86,13 @@
                         <div id="page2" class="col-md-6">
 
                             <p>Search your cuisine</p>
-                            <input type="text" name="gif" class="newgif" value="Search your cuisine">
+                            <input type="text" name="gif" id="cuisine" class="cuisine">
 
                         </div>
 
 
                     <!-- Page3 -->
                         <div id="page3" class="col-md-12" style="margin-top: -50px">
-
-                        <div class="row">
-
-                        <button id="restaurant" class="col-md-12">
-
-                            <img id="rest-image" src="assets/images/tacos.jpg"></img>
-                            <p id="name">1. Tacos Tierra Caliente</p>
-                            <p id="distance">3.4 miles</p>
-                            <img id="star-rating" src="assets/images/stars.png"></img>
-                            <p id="review-count">578 reviews</p>
-                            <p id="cost">$</p>
-                            <p id="neighborhood">Montrose</p>
-                            <p id="address">2003 W Alabama St, Houston</p>
-                            <p id="category">Food trucks, Tacos</p>
-                            
-                        </button>
-
-                        </div>
-
-                        <div class="row">
-
-                        <button id="restaurant" class="col-md-12">
-
-                            <img id="rest-image" src="assets/images/tacos.jpg"></img>
-                            <p id="name">1. Tacos Tierra Caliente</p>
-                            <p id="distance">3.4 miles</p>
-                            <img id="star-rating" src="assets/images/stars.png"></img>
-                            <p id="review-count">578 reviews</p>
-                            <p id="cost">$</p>
-                            <p id="neighborhood">Montrose</p>
-                            <p id="address">2003 W Alabama St, Houston</p>
-                            <p id="category">Food trucks, Tacos</p>
-                            
-                        </button>
-
-                        </div>
-
-                        <div class="row">
-
-                        <button id="restaurant" class="col-md-12">
-
-                            <img id="rest-image" src="assets/images/tacos.jpg"></img>
-                            <p id="name">1. Tacos Tierra Caliente</p>
-                            <p id="distance">3.4 miles</p>
-                            <img id="star-rating" src="assets/images/stars.png"></img>
-                            <p id="review-count">578 reviews</p>
-                            <p id="cost">$</p>
-                            <p id="neighborhood">Montrose</p>
-                            <p id="address">2003 W Alabama St, Houston</p>
-                            <p id="category">Food trucks, Tacos</p>
-                            
-                        </button>
-
-                        </div>
 
                         </div>
 
@@ -186,8 +132,8 @@
 
                                     <img id="event-image" src="assets/images/tom.jpeg"></img>
                                     <p id="name">Tom Petty and The Heartbreakers</p>
-                                    <i class="fa fa-ticket" aria-hidden="true"></i>
-                                    <a id="link" href="www.google.com" target="_blank">Find tickets</a>
+                                    <!-- <i class="fa fa-ticket" aria-hidden="true"></i> -->
+                                    <!-- <a id="link" href="www.google.com" target="_blank">Find tickets</a> -->
                                     <p id="date1">Apr 29</p>
                                     <p id="time">7:30 PM</p>
                                     <p id="address">The Cynthia Woods Mitchell Pavillon</p>
@@ -212,9 +158,8 @@
 
                                 <div class="row">
                                 
-                                    <div id="locations" class="col-md-12">Location 1</div>
-                                    <div id="locations" class="col-md-12">Location 2</div>
-                                    <div id="locations" class="col-md-12">Location 3</div>
+                                    <div id="location1" class="col-md-12"></div>
+                                    <div id="location2" class="col-md-12">The Cynthia Woods Mitchell Pavillon</div>
 
                                 </div>
 
